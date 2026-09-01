@@ -1,0 +1,161 @@
+/* Container Utama */
+hr {
+  border: 0;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 8px auto;
+  border: 2px solid #ccc;
+  border-bottom: 0px;
+  border-top: 0px;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+}
+
+/* Section 1: Header Navigasi */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  align-items: center;
+  background-color: #0066fe;
+  color: white;
+  border-radius: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Section 2: Hero Section */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  text-align: center;
+}
+
+#header h2 {
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+#header p {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.hero-image-wrapper {
+  background-color: #e0e0e0;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 600/400;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#header button {
+  padding: 10px 15px;
+  background-color: #0066fe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Section 3: Biodata Grid */
+#biodata {
+  text-align: center;
+}
+
+#biodata h2 {
+  color: #0066fe;
+  padding-top: 10px;
+}
+
+#biodata p {
+  color: grey;
+  padding-bottom: 20px;
+}
+
+.biodata-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 5px 15px;
+  color: #0066fe;
+}
+
+.biodata-grid div {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  color: #333;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.biodata-grid div strong {
+  color: #0066fe;
+}
+
+/* Section 4: Portofolio Grid */
+#portofolio {
+  text-align: center;
+}
+
+#portofolio h2 {
+  color: #0066fe;
+  padding-top: 10px;
+}
+
+.portofolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 5px 15px;
+}
+
+.portofolio-grid .portofolio-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.portofolio-item img {
+  width: 100%;
+  aspect-ratio: 350/200;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #0066fe;
+  color: white;
+  padding: 1px 0px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
