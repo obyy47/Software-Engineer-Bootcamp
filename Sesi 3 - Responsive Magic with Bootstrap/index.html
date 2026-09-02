@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Profile</title>
+    <!----------------------------------------------------- link bootstrap ----------------------------------------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!----------------------------------------------------- Buat icon logo ----------------------------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!----------------------------------------------------- link custom CSS ----------------------------------------------------->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-light">
+    <!----------------------------------------------------- Pembungkus Utama (Garis Pinggir di Kiri & Kanan) ----------------------------------------------------->
+    <div class="container bg-white border-start border-end p-0 shadow-sm">
+      <!----------------------------------------------------- Navigasi ----------------------------------------------------->
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid px-4 py-1">
+          <a class="navbar-brand fw-bold text-dark fs-4" href="#">
+            ROBBY<span style="color: #ff6600">.DEV</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="btn text-white fw-semibold ms-2"
+                  style="background-color: #ff6600"
+                  onclick="location.href = '#contact'"
+                >
+                  Download CV
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!----------------------------------------------------- Garis Pemisah ----------------------------------------------------->
+      <hr class="my-0 text-secondary opacity-25" />
+
+      <!----------------------------------------------------- Hero Section ----------------------------------------------------->
+      <section id="home" class="py-4 px-4">
+        <div class="container py-2">
+          <div class="row align-items-center">
+            <!----------------------------------------------------- Kolom Teks Intro (Kiri) ----------------------------------------------------->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <h6 class="fw-bold mb-1 text-dark">Hi I am</h6>
+              <h5 class="fw-bold mb-0" style="color: #ff6600">
+                Robby Adriansyah
+              </h5>
+              <h1
+                class="display-3 fw-black text-black mb-3"
+                style="font-weight: 800; line-height: 1.1"
+              >
+                Web<br />
+                <span class="d-block ms-5">Developer</span>
+              </h1>
+              <p
+                class="text-secondary mb-4"
+                style="max-width: 450px; font-size: 0.95rem"
+              >
+                Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+                nibh lectus netus in. Aliquet donec morbi convallis pretium.
+                Turpis tempus pharetra.
+              </p>
+              <a
+                href="#contact"
+                class="btn text-white fw-semibold px-4 py-2"
+                style="background-color: #ff6600; border-radius: 6px"
+                >Hire Me</a
+              >
+            </div>
+
+            <!----------------------------------------------------- Kolom Foto Profil & Sosmed (Kanan) ----------------------------------------------------->
+            <div class="col-lg-6 text-center">
+              <div class="position-relative d-inline-block">
+                <img
+                  src="profile.jpg"
+                  alt="Robby Adriansyah"
+                  class="img-fluid rounded-circle"
+                  style="
+                    width: 300px;
+                    height: 300px;
+                    object-fit: cover;
+                    border: 3px solid #ff6600;
+                    padding: 5px;
+                  "
+                />
+              </div>
+              <!----------------------------------------------------- Ikon Sosial Media di Bawah Foto ----------------------------------------------------->
+              <div
+                class="d-flex justify-content-center gap-3 mt-3 fs-5 text-dark"
+              >
+                <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-dark"
+                  ><i class="bi bi-twitter-x"></i
+                ></a>
+                <a href="#" class="text-dark"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------------------------------------- Garis Pemisah ----------------------------------------------------->
+      <hr class="my-0 text-secondary opacity-25" />
+
+      <!----------------------------------------------------- About Me Section ----------------------------------------------------->
+      <section id="about" class="py-4 px-4 bg-white">
+        <div class="container">
+          <!----------------------------------------------------- Judul & Deskripsi Tengah ----------------------------------------------------->
+          <div class="text-center mb-5">
+            <h2 class="fw-bold mb-2">About Me</h2>
+            <p
+              class="text-secondary mx-auto"
+              style="max-width: 600px; font-size: 0.95rem"
+            >
+              Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+              nibh lectus netus in. Aliquet donec morbi convallis pretium.
+              Turpis tempus pharetra.
+            </p>
+          </div>
+
+          <!----------------------------------------------------- Grid Informasi (3 Kolom x 2 Baris) ----------------------------------------------------->
+          <div class="row g-4">
+            <!----------------------------------------------------- 1. Full Name ----------------------------------------------------->
+            <div class="col-md-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="fs-2" style="color: #ff6600">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">Full Name</h5>
+                  <p class="text-secondary mb-0 small">
+                    Robby Adriansyah Fadillah
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!----------------------------------------------------- 2. Education ----------------------------------------------------->
+            <div class="col-md-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="fs-2" style="color: #ff6600">
+                  <i class="bi bi-mortarboard-fill"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">Education</h5>
+                  <p class="text-secondary mb-0 small">Universitas Pasundan</p>
+                </div>
+              </div>
+            </div>
+
+            <!----------------------------------------------------- 3. Pekerjaan ----------------------------------------------------->
+            <div class="col-md-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="fs-2" style="color: #ff6600">
+                  <i class="bi bi-briefcase-fill"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">Pekerjaan</h5>
+                  <p class="text-secondary mb-0 small">Web Developer</p>
+                </div>
+              </div>
+            </div>
+
+            <!----------------------------------------------------- 4. Contact ----------------------------------------------------->
+            <div class="col-md-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="fs-2" style="color: #ff6600">
+                  <i class="bi bi-journal-bookmark-fill"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">Contact</h5>
+                  <p class="text-secondary mb-0 small">
+                    robby.adriansyah@example.com<br />+62 812-3456-7890
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!----------------------------------------------------- 5. Hobi ----------------------------------------------------->
+            <div class="col-md-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="fs-2" style="color: #ff6600">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">Hobi</h5>
+                  <p class="text-secondary mb-0 small">
+                    Workout, Coding, Photography
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!----------------------------------------------------- 6. Alamat ----------------------------------------------------->
+            <div class="col-md-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="fs-2" style="color: #ff6600">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">Alamat</h5>
+                  <p class="text-secondary mb-0 small">Bandung, Jawa Barat</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------------------------------------- Garis Pemisah ----------------------------------------------------->
+      <hr class="my-0 text-secondary opacity-25" />
+
+      <!----------------------------------------------------- Projects Section ----------------------------------------------------->
+      <section id="projects" class="py-4 px-4 bg-white">
+        <div class="container">
+          <!----------------------------------------------------- Judul & Subtitle ----------------------------------------------------->
+          <div class="text-center mb-4">
+            <h2 class="fw-bold mb-2">My Projects</h2>
+            <p
+              class="text-secondary mx-auto"
+              style="max-width: 600px; font-size: 0.95rem"
+            >
+              Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam
+              mauris est risus lectus. Phasellus consequat urna tellus.
+            </p>
+          </div>
+
+          <!----------------------------------------------------- Tombol Filter Kategori ----------------------------------------------------->
+          <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
+            <button
+              class="btn btn-light fw-semibold px-3 py-1 border"
+              style="font-size: 0.9rem; border-radius: 8px"
+            >
+              All
+            </button>
+            <button
+              class="btn btn-light fw-semibold px-3 py-1 border"
+              style="font-size: 0.9rem; border-radius: 8px"
+            >
+              UI/UX
+            </button>
+            <button
+              class="btn btn-light fw-semibold px-3 py-1 border"
+              style="font-size: 0.9rem; border-radius: 8px"
+            >
+              Web Design
+            </button>
+            <button
+              class="btn btn-light fw-semibold px-3 py-1 border"
+              style="font-size: 0.9rem; border-radius: 8px"
+            >
+              App Design
+            </button>
+            <button
+              class="btn btn-light fw-semibold px-3 py-1 border"
+              style="font-size: 0.9rem; border-radius: 8px"
+            >
+              Graphic Design
+            </button>
+          </div>
+
+          <!----------------------------------------------------- Grid 3 Proyek ----------------------------------------------------->
+          <div class="row g-4">
+            <!----------------------------------------------------- Card Proyek 1 ----------------------------------------------------->
+            <div class="col-md-4 text-center">
+              <div
+                class="p-4 rounded-4 mb-3 text-center d-flex align-items-center justify-content-center"
+                style="background-color: #fff8f2; height: 320px"
+              >
+                <img
+                  src="https://picsum.photos/300/400?random=1"
+                  alt="AirCalling Landing Page"
+                  class="img-fluid rounded shadow-sm"
+                  style="max-height: 100%; object-fit: contain"
+                />
+              </div>
+              <span
+                class="fw-semibold d-block mb-1"
+                style="color: #ff6600; font-size: 0.85rem"
+                >UI/UX</span
+              >
+              <h5 class="fw-bold text-dark">AirCalling Landing Page Design</h5>
+            </div>
+
+            <!----------------------------------------------------- Card Proyek 2 ----------------------------------------------------->
+            <div class="col-md-4 text-center">
+              <div
+                class="p-4 rounded-4 mb-3 text-center d-flex align-items-center justify-content-center"
+                style="background-color: #fff8f2; height: 320px"
+              >
+                <img
+                  src="https://picsum.photos/300/400?random=2"
+                  alt="Business Landing Page"
+                  class="img-fluid rounded shadow-sm"
+                  style="max-height: 100%; object-fit: contain"
+                />
+              </div>
+              <span
+                class="fw-semibold d-block mb-1"
+                style="color: #ff6600; font-size: 0.85rem"
+                >Web Design</span
+              >
+              <h5 class="fw-bold text-dark">Business Landing Page Design</h5>
+            </div>
+
+            <!----------------------------------------------------- Card Proyek 3 ----------------------------------------------------->
+            <div class="col-md-4 text-center">
+              <div
+                class="p-4 rounded-4 mb-3 text-center d-flex align-items-center justify-content-center"
+                style="background-color: #fff8f2; height: 320px"
+              >
+                <img
+                  src="https://picsum.photos/300/400?random=3"
+                  alt="Ecom Web Page"
+                  class="img-fluid rounded shadow-sm"
+                  style="max-height: 100%; object-fit: contain"
+                />
+              </div>
+              <span
+                class="fw-semibold d-block mb-1"
+                style="color: #ff6600; font-size: 0.85rem"
+                >App Design</span
+              >
+              <h5 class="fw-bold text-dark">Ecom Web Page Design</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <!-----------------------------------------------------   Link bootstrap js ----------------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>
