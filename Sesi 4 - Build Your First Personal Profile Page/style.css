@@ -1,0 +1,215 @@
+/* =========================================================
+   1. VARIABLES
+   Nilai warna & ukuran yang dipakai berulang dikumpulkan di
+   satu tempat, biar gampang diubah tanpa nyari satu-satu.
+   ========================================================= */
+:root {
+  --color-bg: #0a121d;
+  --color-bg-alt: #070d19;
+  --color-card-bg: #111a2e;
+  --color-border: #1e293b;
+  --color-primary: #0d6efd;
+  --color-primary-glow: rgba(13, 110, 253, 0.4);
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+}
+
+/* =========================================================
+   2. BASE / LAYOUT
+   ========================================================= */
+body {
+  background-color: var(--color-bg);
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+/* Bagian "40x3" garis biru kecil di bawah judul section (Services,
+   Technologies, Projects). Sebelumnya ditulis pakai inline style
+   di 3 tempat berbeda -> sekarang jadi 1 class. */
+.section-divider {
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: 0.25rem;
+}
+
+.section-heading {
+  font-size: 24px;
+}
+
+/* =========================================================
+   3. NAVBAR
+   ========================================================= */
+.navbar-custom {
+  background-color: var(
+    --color-bg
+  ) !important; /* !important dibutuhkan karena
+    menang lawan .navbar-dark bawaan Bootstrap yang sudah punya background sendiri */
+}
+
+.nav-link-custom {
+  position: relative;
+  color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ) !important; /* !important dibutuhkan karena
+    menimpa warna default <a> dari Bootstrap Reboot */
+  font-weight: 500;
+  transition:
+    color var(--transition-base),
+    transform var(--transition-base);
+}
+
+.nav-link-custom:hover {
+  color: var(--color-primary) !important;
+  transform: translateY(-2px);
+}
+
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width var(--transition-base);
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+/* =========================================================
+   4. HERO SECTION
+   ========================================================= */
+.hero-photo {
+  max-height: 400px;
+}
+
+/* =========================================================
+   5. ABOUT SECTION
+   ========================================================= */
+.about-text {
+  width: 60%;
+}
+
+/* =========================================================
+   6. SERVICES CARDS
+   Diberi nama class sendiri (bukan cuma "bg-dark") supaya efek
+   hover-nya tidak ikut kepakai di elemen lain yang kebetulan juga
+   pakai class bg-dark, contohnya modal-content di bawah.
+   ========================================================= */
+.service-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  transition:
+    transform var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 25px var(--color-primary-glow);
+}
+
+.service-icon {
+  font-size: 80px;
+}
+
+.service-title {
+  font-size: 16px;
+}
+
+.service-desc {
+  font-size: 15px;
+}
+
+/* =========================================================
+   7. TECHNOLOGIES / SKILLS GRID
+   ========================================================= */
+.skill-icon {
+  max-height: 60px;
+  transition:
+    transform var(--transition-base),
+    filter var(--transition-base);
+  cursor: pointer;
+}
+
+.skill-icon:hover {
+  transform: translateY(-8px) scale(1.15);
+  filter: drop-shadow(0 5px 15px var(--color-primary-glow));
+}
+
+/* Logo GitHub aslinya hitam, dibalik warnanya biar kelihatan di background gelap */
+.icon-invert {
+  filter: invert(1);
+}
+
+/* =========================================================
+   8. FEATURED PROJECT / CAROUSEL
+   Class sendiri (bukan bg-dark) dengan alasan yang sama seperti
+   service-card di atas.
+   ========================================================= */
+.project-carousel {
+  max-width: 800px;
+}
+
+.project-slide {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+}
+
+/* =========================================================
+   9. BUTTONS
+   ========================================================= */
+.btn {
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 5px 15px var(--color-primary-glow);
+}
+
+/* =========================================================
+   10. FOOTER
+   ========================================================= */
+.footer-cta {
+  background:
+    linear-gradient(rgba(10, 25, 47, 0.5), rgba(10, 25, 47, 0.6)),
+    url("https://picsum.photos/1600/900") no-repeat center center/cover;
+}
+
+.footer-bottom {
+  background-color: var(--color-bg-alt);
+}
+
+.social-icon-btn {
+  width: 38px;
+  height: 38px;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  transition:
+    background-color var(--transition-base),
+    border-color var(--transition-base),
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.social-icon-btn:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px var(--color-primary-glow);
+}

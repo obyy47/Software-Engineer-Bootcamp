@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sesi 4 - Personal Profile Page</title>
+
+    <!-- Link Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Link Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Link Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Content Section -->
+    <section
+      class="min-vh-100 d-flex justify-content-center align-items-center py-4 text-white"
+    >
+      <div class="container">
+        <!---------------------------------------- Header Navigasi Responsive -------------------------------------------->
+        <header
+          class="navbar navbar-expand-md navbar-dark py-3 border-bottom border-2 border-secondary border-opacity-50 sticky-top navbar-custom"
+        >
+          <div class="container-fluid p-0">
+            <!-- Branding Kiri -->
+            <a class="navbar-brand m-0 p-0 text-white" href="#">
+              <h4 class="fw-bold m-0">Robby Adriansyah Fadillah</h4>
+              <small class="text-white-50 d-block">FULL STACK DEVELOPER</small>
+            </a>
+
+            <!-- Tombol Hamburger (buat munculin di Mobile/hp) -->
+            <button
+              class="navbar-toggler border-0 shadow-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Navigasi di Header -->
+            <div
+              class="collapse navbar-collapse justify-content-end mt-3 mt-md-0"
+              id="navbarNav"
+            >
+              <div
+                class="d-flex flex-column flex-md-row gap-3 gap-md-4 align-items-md-center"
+              >
+                <a href="#home" class="nav-link-custom text-decoration-none"
+                  >Home</a
+                >
+                <a href="#about" class="nav-link-custom text-decoration-none"
+                  >About</a
+                >
+                <a href="#services" class="nav-link-custom text-decoration-none"
+                  >Services</a
+                >
+                <a href="#projects" class="nav-link-custom text-decoration-none"
+                  >Projects</a
+                >
+                <a href="#blog" class="nav-link-custom text-decoration-none"
+                  >Blog</a
+                >
+                <a href="#contact" class="nav-link-custom text-decoration-none"
+                  >Contact</a
+                >
+
+                <a
+                  href="#hireme"
+                  class="btn btn-primary rounded-5 px-4 mt-2 mt-md-0"
+                >
+                  <span class="fw-bold">Hire Me</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!---------------------------------------- Hero Section -------------------------------------------->
+        <section id="home" class="text-white py-2">
+          <div
+            class="row row-cols-md-2 align-items-center justify-content-center g-4"
+          >
+            <div class="col">
+              <h5 class="text-primary fw-bold my-3">Hello, I'm</h5>
+              <h1 class="fw-bold mb-0">ROBBY ADRIANSYAH F.</h1>
+              <h2 class="fw-bold mb-4 text-white-50">Full Stack Developer</h2>
+              <p>
+                I build exceptional digital experiences for businesses around
+                the world
+              </p>
+
+              <div class="d-flex align-items-center gap-3 mt-4">
+                <a
+                  href="#viewmywork"
+                  class="btn btn-primary fw-bold rounded-5 py-2 px-4"
+                  >View My Work</a
+                >
+                <a
+                  href="#contactme"
+                  class="btn btn-outline-light fw-bold rounded-5 py-2 px-4"
+                  >Contact Me</a
+                >
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <img
+                src="assets/foto.png"
+                alt="Foto Robby Adriansyah F."
+                class="img-fluid hero-photo"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Garis Pemisah 2 -->
+        <hr class="border-secondary border-2 opacity-50 my-3" />
+
+        <!---------------------------------------- About Me Section -------------------------------------------->
+        <div
+          id="about"
+          class="d-flex flex-column align-items-center justify-content-center"
+        >
+          <h2 class="fw-bold">About Me</h2>
+          <p class="m-1 text-center text-white-50 about-text">
+            I'm a passionate Full Stack Developer based in Bandung, Indonesia. I
+            specialize in building scalable web applications using modern
+            technologies. With a strong eye for design and a love for clean
+            code, I help businesses bring their ideas to life.
+          </p>
+        </div>
+
+        <!-- 6 Info Personal Icons -->
+        <div class="row row-cols-2 row-cols-md-3 py-4 g-4">
+          <div class="col d-flex align-items-center gap-2">
+            <i class="bi bi-person-fill text-primary fs-1"></i>
+            <div>
+              <h6 class="fw-bold m-0">Full Name</h6>
+              <p class="m-0 text-white-50">Robby Adriansyah Fadillah</p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-center gap-2">
+            <i class="bi bi-mortarboard-fill text-primary fs-1"></i>
+            <div>
+              <h6 class="fw-bold m-0">Education</h6>
+              <p class="m-0 text-white-50">S1 Information Technology</p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-center gap-2">
+            <i class="bi bi-briefcase-fill text-primary fs-1"></i>
+            <div>
+              <h6 class="fw-bold m-0">Job</h6>
+              <p class="m-0 text-white-50">Full Stack Developer</p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-center gap-2">
+            <i class="bi bi-telephone-fill text-primary fs-1"></i>
+            <div>
+              <h6 class="fw-bold m-0">Contact</h6>
+              <p class="m-0 text-white-50">+62-8577-9540-108</p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-center gap-2">
+            <i class="bi bi-code-slash text-primary fs-1"></i>
+            <div>
+              <h6 class="fw-bold m-0">Hobby</h6>
+              <p class="m-0 text-white-50">Soccer</p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-center gap-2">
+            <i class="bi bi-geo-alt-fill text-primary fs-1"></i>
+            <div>
+              <h6 class="fw-bold m-0">Address</h6>
+              <p class="m-0 text-white-50">
+                Jl. Kopo Permai 1 <br />
+                Bandung, Jawa Barat
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Garis Pemisah 3 -->
+        <hr class="border-secondary border-2 opacity-50 my-2" />
+
+        <!---------------------------------------- My Services Header -------------------------------------------->
+        <div id="services" class="py-2 d-flex flex-column align-items-center">
+          <h3 class="text-primary fw-semibold">My Services</h3>
+          <p class="fw-bold section-heading">What I Can Do For You</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="row row-cols-md-3 g-4 mt-1 py-2">
+          <div class="col">
+            <div
+              class="service-card rounded-4 p-4 d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-display text-primary service-icon"></i>
+              <div>
+                <span class="fw-bold service-title">Web Desain</span>
+                <p class="m-0 mt-1 text-white-50 service-desc">
+                  Modern, attractive and user friendly designs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="service-card rounded-4 p-4 d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-code-slash text-primary service-icon"></i>
+              <div>
+                <span class="fw-bold service-title">Web Development</span>
+                <p class="m-0 mt-1 text-white-50 service-desc">
+                  Building fast, responsive and scalable websites and web apps.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="service-card rounded-4 p-4 d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-window-stack text-primary service-icon"></i>
+              <div>
+                <span class="fw-bold service-title">Frontend Development</span>
+                <p class="m-0 mt-1 text-white-50 service-desc">
+                  Bringing ideas to life with clean and efficient code.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="service-card rounded-4 p-4 d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-server text-primary service-icon"></i>
+              <div>
+                <span class="fw-bold service-title">Backend Development</span>
+                <p class="m-0 mt-1 text-white-50 service-desc">
+                  Building secure and powerful backend systems.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="service-card rounded-4 p-4 d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-database text-primary service-icon"></i>
+              <div>
+                <span class="fw-bold service-title">Database Management</span>
+                <p class="m-0 mt-1 text-white-50 service-desc">
+                  Designing and managing databases for high performance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="service-card rounded-4 p-4 d-flex align-items-center gap-3"
+            >
+              <i class="bi bi-gear text-primary service-icon"></i>
+              <div>
+                <span class="fw-bold service-title">Website Maintenance</span>
+                <p class="m-0 mt-1 text-white-50 service-desc">
+                  Keeping your website up to date, secure and running smoothly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Garis Pemisah 4 -->
+        <hr class="border-secondary border-2 opacity-50 my-4" />
+
+        <!---------------------------------------- Technologies Header -------------------------------------------->
+        <div class="d-flex flex-column align-items-center py-2">
+          <h3 class="fw-bold pb-2">Technologies I Use</h3>
+          <div class="section-divider"></div>
+        </div>
+
+        <!---------------------------------------- Skills Grid -------------------------------------------->
+        <div
+          class="row row-cols-2 row-cols-md-5 g-4 text-center justify-content-center mt-1"
+        >
+          <div class="col">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5"
+              class="img-fluid skill-icon"
+            />
+            <p class="mt-2 fw-semibold">HTML5</p>
+          </div>
+
+          <div class="col">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3"
+              class="img-fluid skill-icon"
+            />
+            <p class="mt-2 fw-semibold">CSS3</p>
+          </div>
+
+          <div class="col">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+              class="img-fluid skill-icon"
+            />
+            <p class="mt-2 fw-semibold">JavaScript</p>
+          </div>
+
+          <div class="col">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+              alt="PHP"
+              class="img-fluid skill-icon"
+            />
+            <p class="mt-2 fw-semibold">PHP</p>
+          </div>
+
+          <div class="col">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              alt="MySQL"
+              class="img-fluid skill-icon"
+            />
+            <p class="mt-2 fw-semibold">MySQL</p>
+          </div>
+
+          <div class="col">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"
+              class="img-fluid skill-icon"
+            />
+            <p class="mt-2 fw-semibold">Git</p>
+          </div>
+
+          <div class="col">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+              class="img-fluid skill-icon icon-invert"
+            />
+            <p class="mt-2 fw-semibold">GitHub</p>
+          </div>
+
+          <div class="col">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap"
+              class="img-fluid skill-icon"
+            />
+            <p class="mt-2 fw-semibold">Bootstrap</p>
+          </div>
+
+          <div class="col">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+              alt="VS Code"
+              class="img-fluid skill-icon"
+            />
+            <p class="mt-2 fw-semibold">VS Code</p>
+          </div>
+
+          <div class="col">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              alt="Figma"
+              class="img-fluid skill-icon"
+            />
+            <p class="mt-2 fw-semibold">Figma</p>
+          </div>
+        </div>
+
+        <!-- Garis Pemisah 5 -->
+        <hr class="border-secondary border-2 opacity-50 my-3" />
+
+        <!---------------------------------------- Featured Project + Carousel -------------------------------------------->
+        <div id="projects" class="d-flex flex-column align-items-center py-2">
+          <h3 class="fw-bold pb-2">Featured Project</h3>
+          <div class="section-divider mb-4"></div>
+
+          <!-- Carousel Bootstrap -->
+          <div
+            id="projectCarousel"
+            class="carousel slide project-carousel w-100"
+            data-bs-ride="carousel"
+          >
+            <!-- Indikator Slide -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#projectCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Kilaura.id E-Commerce Store"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#projectCarousel"
+                data-bs-slide-to="1"
+                aria-label="Bank Assessment System"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#projectCarousel"
+                data-bs-slide-to="2"
+                aria-label="Network & IT Management Dashboard"
+              ></button>
+            </div>
+
+            <!-- Isian Carousel (3 Projek) -->
+            <div class="carousel-inner project-slide rounded-4">
+              <!-- Project 1 -->
+              <div class="carousel-item active">
+                <div class="p-4 p-md-5 text-center">
+                  <i class="bi bi-cart-check text-primary display-1 mb-3"></i>
+                  <h4 class="fw-bold">Kilaura.id E-Commerce Store</h4>
+                  <p class="text-white-50">
+                    Website toko online aksesoris dengan sistem katalog modern
+                    dan responsif.
+                  </p>
+                  <button
+                    class="btn btn-primary rounded-5 px-4 mt-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectModal1"
+                  >
+                    Detail Project
+                  </button>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="carousel-item">
+                <div class="p-4 p-md-5 text-center">
+                  <i class="bi bi-bank text-primary display-1 mb-3"></i>
+                  <h4 class="fw-bold">Bank Assessment System</h4>
+                  <p class="text-white-50">
+                    Aplikasi pengelolaan data dan sistem penilaian kerja
+                    terintegrasi.
+                  </p>
+                  <button
+                    class="btn btn-primary rounded-5 px-4 mt-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectModal2"
+                  >
+                    Detail Project
+                  </button>
+                </div>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="carousel-item">
+                <div class="p-4 p-md-5 text-center">
+                  <i class="bi bi-speedometer2 text-primary display-1 mb-3"></i>
+                  <h4 class="fw-bold">Network & IT Management Dashboard</h4>
+                  <p class="text-white-50">
+                    Dashboard pemantauan performa jaringan dan infrastruktur IT
+                    perusahaan.
+                  </p>
+                  <button
+                    class="btn btn-primary rounded-5 px-4 mt-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectModal3"
+                  >
+                    Detail Project
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tombol Prev / Next -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#projectCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#projectCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!---------------------------------------- FOOTER SECTION -------------------------------------------->
+        <footer id="contact" class="text-white mt-2">
+          <!-- Call To Action (CTA) Banner -->
+          <div
+            class="footer-cta text-center position-relative d-flex align-items-center justify-content-center"
+          >
+            <div class="container position-relative z-1 py-4">
+              <h2 class="fw-bold display-6 mb-3">Let's Work Together</h2>
+              <p class="text-white-50 fs-5 mb-1">
+                Have a project in mind? I'd love to hear about it.
+              </p>
+              <p class="text-white-50 fs-5 mb-4">
+                Let's create something amazing together.
+              </p>
+              <a
+                href="mailto:robbyadriansyah7@gmail.com"
+                class="btn btn-primary rounded-5 px-4 py-2 fw-semibold"
+              >
+                Get In Touch <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Bottom Bar -->
+          <div class="footer-bottom py-3 border-top border-dark-subtle">
+            <div
+              class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3"
+            >
+              <div class="text-center text-md-start">
+                <h5 class="fw-bold m-0 fs-5">Robby Adriansyah Fadillah</h5>
+                <small class="text-white-50">Full Stack Developer</small>
+              </div>
+
+              <div class="text-center">
+                <small class="text-white-50"
+                  >&copy; 2026 Robby Adriansyah Fadillah. All rights
+                  reserved.</small
+                >
+              </div>
+
+              <div class="d-flex gap-2">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon-btn d-flex align-items-center justify-content-center text-white text-decoration-none rounded-3"
+                  aria-label="LinkedIn"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon-btn d-flex align-items-center justify-content-center text-white text-decoration-none rounded-3"
+                  aria-label="GitHub"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon-btn d-flex align-items-center justify-content-center text-white text-decoration-none rounded-3"
+                  aria-label="Twitter / X"
+                >
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <!---------------------------------------- MODAL POP-UP (Di luar Container) -------------------------------------------->
+
+    <!-- Modal 1: Kilaura.id -->
+    <div
+      class="modal fade text-dark"
+      id="projectModal1"
+      tabindex="-1"
+      aria-labelledby="projectModal1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border border-secondary">
+          <div class="modal-header border-bottom border-secondary">
+            <h5 class="modal-title fw-bold" id="projectModal1Label">
+              Kilaura.id E-Commerce
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Project platform e-commerce buatan sendiri yang fokus pada
+              penjualan gelang, cincin, dan aksesoris custom.
+            </p>
+            <h6>Tech Stack:</h6>
+            <span class="badge bg-primary">HTML5</span>
+            <span class="badge bg-primary">Bootstrap 5</span>
+            <span class="badge bg-primary">JavaScript</span>
+          </div>
+
+          <div class="modal-footer border-top border-secondary">
+            <button
+              type="button"
+              class="btn btn-secondary rounded-5"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: Bank Assessment System -->
+    <div
+      class="modal fade text-dark"
+      id="projectModal2"
+      tabindex="-1"
+      aria-labelledby="projectModal2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border border-secondary">
+          <div class="modal-header border-bottom border-secondary">
+            <h5 class="modal-title fw-bold" id="projectModal2Label">
+              Bank Assessment System
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Sistem pengolahan data teknis dan analisis penilaian performa
+              kerja berbasis web.
+            </p>
+            <h6>Tech Stack:</h6>
+            <span class="badge bg-primary">PHP</span>
+            <span class="badge bg-primary">MySQL</span>
+            <span class="badge bg-primary">Bootstrap</span>
+          </div>
+
+          <div class="modal-footer border-top border-secondary">
+            <button
+              type="button"
+              class="btn btn-secondary rounded-5"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: IT Management Dashboard -->
+    <div
+      class="modal fade text-dark"
+      id="projectModal3"
+      tabindex="-1"
+      aria-labelledby="projectModal3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border border-secondary">
+          <div class="modal-header border-bottom border-secondary">
+            <h5 class="modal-title fw-bold" id="projectModal3Label">
+              IT Management Dashboard
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Dashboard monitoring infrastruktur IT dan lalu lintas jaringan
+              secara realtime.
+            </p>
+            <h6>Tech Stack:</h6>
+            <span class="badge bg-primary">JavaScript</span>
+            <span class="badge bg-primary">Bootstrap 5</span>
+          </div>
+
+          <div class="modal-footer border-top border-secondary">
+            <button
+              type="button"
+              class="btn btn-secondary rounded-5"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
