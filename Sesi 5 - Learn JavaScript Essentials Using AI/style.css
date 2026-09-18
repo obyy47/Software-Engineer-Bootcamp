@@ -1,0 +1,98 @@
+/* 🎨 PALET WARNA UTAMA: Pusat penyimpanan warna tema biar gampang diganti kapan aja */
+:root {
+  --primary-color: #393db1;
+  --border-color: #282f39;
+  --card-border: #e2e8f0;
+  --text-primary: #1a202c;
+  --text-secondary: #64748b;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+/* 🔘 DEKORASI TOMBOL FILTER: Ubah tombol kaku jadi kapsul rounded */
+.btn-filter {
+  padding: 8px 20px;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+  color: #000000;
+  border-radius: 25px; /* Pelengkung sudut tombol */
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease; /* Animasi halus pas disentuh mouse */
+}
+
+/* 💡 EFEK LAMPU NYALA: Ubah warna tombol saat disentuh mouse atau lagi aktif terpilih */
+.btn-filter:hover,
+.btn-filter.active {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* 📐 ATAAN RAK/GRID: Bikin kartu-kartu produk sejajar di tengah dengan jarak yang pas */
+.produk-grid {
+  display: flex;
+  flex-wrap: wrap; /* Bikin kartu otomatis turun ke bawah kalau layar sempit */
+  justify-content: center; /* Ketengahkan semua kartu */
+  gap: 24px; /* Jarak antar kartu */
+  margin-top: 20px;
+}
+
+/* 🃏 BENTUK KARTU SKlNCARE: Bingkai putih, sudut membulat, dan efek melayang pas di-hover */
+.card-skincare {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  width: 220px; /* Batasi lebar kartu biar gak melebar sembarangan */
+  padding: 16px;
+  text-align: center; /* Rata tengah teks di dalam kartu */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Bayangan tipis */
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* 🎈 EFEK MELAYANG: Kartu terangkat sedikit ke atas saat kursor menempel */
+.card-skincare:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 🖼️ BINGKAI FOTO PRODUK: Bikin ukuran foto seragam tanpa merusak proporsi aslinya */
+.card-skincare img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain; /* Jaga foto biar gak gepeng atau terpotong */
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* 📝 JUDUL PRODUK: Pengunci tinggi minimal judul biar posisi teks di bawahnya sejajar presisi */
+.card-skincare h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  min-height: 40px; /* Biar judul 1 baris & 2 baris tetap sejajar sejajar */
+}
+
+/* 📜 DESKRIPSI SINGKAT: Teks penjelasan produk */
+.card-skincare .deskripsi {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  min-height: 36px;
+}
+
+/* 🏷️ TEKS HARGA: Menampilkan harga dengan warna penegas yang sama dengan tema */
+.card-skincare .harga {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
